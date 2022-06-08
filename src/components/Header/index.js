@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 function Header() {
  return (
-  <header>
+  <header className="flex-row px-1">
    <span>
-    <h1>Noah Slusher</h1>
+    <h1>
+     <a data-testid="link" href="/">
+      Noah Slusher</a>
+      </h1>
     <nav>
      <div>About Me</div>
      <div>My Works</div>
