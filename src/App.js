@@ -4,7 +4,8 @@ import './App.css';
 import Header from './components/Header'
 import About from './components/About'
 import Contact from './components/Contact'
-import Portfolio from './components/Portfolio'
+import MyWork from './components/MyWork'
+import Resume from './components/Resume'
 import Modal from './components/Modal'
 
 function App() {
@@ -12,14 +13,18 @@ function App() {
   
   return (
     <div>
-      <Header>
+      <Header 
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
+        >
       </Header>
       <main>
         {!contactSelected ? (
           <>
         <About></About>
+        <MyWork></MyWork>
+        <Resume></Resume>
+
         </>
         ) : (
           <Contact></Contact>

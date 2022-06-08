@@ -52,27 +52,42 @@ const Portfolio = ({ category }) => {
 
 const currentPhotos = photos.filter(photo => photo.category === category)
 
-const toggleModal = (image, i) => {
- setCurrentPhoto({ ...image, index: i })
- setIsModalOpen(!isModalOpen)
-}
+// const toggleModal = (image, i) => {
+//  setCurrentPhoto({ ...image, index: i })
+//  setIsModalOpen(!isModalOpen)
+//}
  return (
-  <div>
-   {isModalOpen && (
-    <Modal onClose={toggleModal} currentPhoto={currentPhoto} />
-   )}
+  // <div>
+  //  {isModalOpen && (
+  //   <Modal onClose={toggleModal} currentPhoto={currentPhoto} />
+  //  )}
   
-  <div className='flex-row'>
-   {currentPhotos.map((image, i) => (
-    <img 
-    src={require(`../../assets/${category}/${i}.png`).default}
-    alt={image.name}
-    className="img-thumbnail mx-1"
-    onClick={() => toggleModal(image, i)}
-    key={image.name}
-    />
-   ))}
-  </div>
+  // <div id="mywork" className='flex-row'>
+  //  {currentPhotos.map((image, i) => (
+  //   <img 
+  //   src={require(`../../assets/works/1.png`).default}
+  //   alt={image.name}
+  //   className="img-thumbnail mx-1"
+  //   // onClick={() => toggleModal(image, i)}
+  //   key={image.name}
+  //   />
+  //  ))}
+  // </div>
+  // </div>
+
+  <div>
+   <div>
+      <div className="flex-row">
+        {photos.map((image, i) => (
+          <img
+            src={require(`../../assets/works/${i}.jpg`).default}
+            alt={image.name}
+            className="img-thumbnail mx-1"
+            key={image.name}
+          />
+        ))}
+      </div>
+    </div>
   </div>
  )
 }
