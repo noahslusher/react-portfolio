@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 function Header(props) {
  const {
   contactSelected,
-  setContactSelected
+  setContactSelected,
  } = props
  return (
   <header className="flex-row px-1">
