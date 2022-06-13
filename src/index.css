@@ -103,6 +103,8 @@ a:hover {
 
 header {
   background: var(--light);
+  display: flex;
+  justify-content: space-between;
 }
 
 header a {
@@ -177,12 +179,12 @@ nav li:hover {
 
 nav ul{
   text-align: center;
-  margin-left: 10vw;
+  margin-left: vw;
 }
 
 nav  li {
   cursor: pointer;
-  width: 14vw;
+  width: 17vw;
 }
 
 textarea {
@@ -192,17 +194,18 @@ textarea {
 	padding: 5px;
 }
 
-.container {
+/* .container {
   width: 85%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .flex-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .space-between {
@@ -412,10 +415,15 @@ a {
 #contact-info input {
   align-items: flex-end;
 }
-
+#contact-message {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
 #mywork h1 {
   text-align: center;
   margin-bottom: 2vh;
+  width: 100%;
 }
 
 #about-me {

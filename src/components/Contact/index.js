@@ -50,7 +50,7 @@ function ContactForm() {
           <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
         </div>
         </div>
-        <div>
+        <div id="contact-message">
           <label htmlFor="message">Message:</label>
           <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
         </div>
