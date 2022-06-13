@@ -40,6 +40,7 @@ function ContactForm() {
     <section id="contact-form">
       <h1>Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
+        <div id="contact-info">
         <div>
           <label htmlFor="name">Name:</label>
           <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
@@ -47,6 +48,7 @@ function ContactForm() {
         <div>
           <label htmlFor="email">Email address:</label>
           <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+        </div>
         </div>
         <div>
           <label htmlFor="message">Message:</label>

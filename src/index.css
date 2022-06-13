@@ -15,10 +15,10 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #322D38;
+  --primary: #233D4D;
   --secondary: #B4C5E4;
   --tertiary: #FBFFF1;
-  --light: #fafafa;
+  --light: #1A2B36;
   --dark: #000000;
   --darker: #111111;
   --error: rgb(228, 46, 1);
@@ -102,8 +102,7 @@ a:hover {
 }
 
 header {
-  background: var(--darker);
-  padding: 3vw;
+  background: var(--light);
 }
 
 header a {
@@ -111,7 +110,7 @@ header a {
 }
 
 footer h5{
-  background-color: var(--darker);
+  background-color: var(--light);
 }
 
 button {
@@ -178,7 +177,7 @@ nav li:hover {
 
 nav ul{
   text-align: center;
-  margin-left: 7vw;
+  margin-left: 10vw;
 }
 
 nav  li {
@@ -401,6 +400,16 @@ a {
 #contact-form label {
   margin-right: 2vw;
   margin-top: 2vw;
+}
+
+#contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#contact-info input {
+  align-items: flex-end;
 }
 
 #mywork h1 {

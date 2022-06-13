@@ -19,7 +19,7 @@ function Header(props) {
        <span onClick={() => setAboutSelected(true)}>About Me</span>
       </li>
       <li className="">
-       <a data-testid="about" href="#contact" onClick={() => setAboutSelected(false)}>
+       <a data-testid="about" href="#contact-form" onClick={() => setAboutSelected(false)}>
         Contact Me
        </a>
       </li>
