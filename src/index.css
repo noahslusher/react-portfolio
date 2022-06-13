@@ -102,12 +102,16 @@ a:hover {
 }
 
 header {
-  background: var(--primary);
+  background: var(--darker);
   padding: 3vw;
 }
 
 header a {
   color: var(--tertiary);
+}
+
+footer h5{
+  background-color: var(--darker);
 }
 
 button {
@@ -346,6 +350,7 @@ a {
 #resume {
   border: 0.2vw solid var(--tertiary);
   padding: 4vw;
+  margin-top: 10vh;
 }
 
 #resume h3 {
@@ -375,4 +380,56 @@ a {
 #close-btn {
   background-color: #cc0000;
   border: 0.1vw solid var(--tertiary)
+}
+
+#contact-btn {
+  border: 0.1vw solid var(--tertiary);
+  margin-top: 3vh;
+}
+
+#contact-form h1{
+  text-align: center;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+  align-items: center;
+}
+
+#contact-form label {
+  margin-right: 2vw;
+  margin-top: 2vw;
+}
+
+#mywork h1 {
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me h1 {
+  margin-bottom: 6vh;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.social-icon {
+  width: 10vw;
+  display: 
+}
+
+.social-icon img {
+  border: none;
 }
