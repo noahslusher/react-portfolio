@@ -3,19 +3,19 @@ import React, { useEffect } from 'react'
 function Header(props) {
  const {
   contactSelected,
-  setContactSelected,
+  setContactSelected
  } = props
  return (
-  <header className="flex-row px-1">
-   <span>
-    <h1>
+  <header>
+   <div className="header flex-row">
+    <h1 className='flex-row'>
      <a data-testid="link" href="/">
       Noah Slusher
       </a>
       </h1>
     <nav>
      <ul className="flex-row">
-      <li className="mx-2">
+      <li className="">
        <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
         About Me
        </a>
@@ -35,7 +35,7 @@ function Header(props) {
       </li>
      </ul>
     </nav>
-   </span>
+   </div>
    
   </header>
  )

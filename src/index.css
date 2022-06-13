@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -15,9 +15,9 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #8c54ff;
-  --secondary: #F3A847;
-  --tertiary: #B12704;
+  --primary: #322D38;
+  --secondary: #B4C5E4;
+  --tertiary: #FBFFF1;
   --light: #fafafa;
   --dark: #000000;
   --darker: #111111;
@@ -44,9 +44,9 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--dark);
-  color: var(--light);
-  font-family: 'Poiret One', cursive;
+  background: var(--primary);
+  color: var(--tertiary);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
 
@@ -56,7 +56,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
@@ -88,7 +88,7 @@ h6 {
 
 p {
   font-size: 1.1rem;
-  margin-top: 0;
+  margin-top: 1vh;
 }
 
 a {
@@ -98,15 +98,16 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  cursor:pointer;
 }
 
 header {
-  background: var(--dark);
+  background: var(--primary);
+  padding: 3vw;
 }
 
 header a {
-  color: var(--light);
+  color: var(--tertiary);
 }
 
 button {
@@ -132,6 +133,8 @@ button[disabled] {
 
 img {
   max-width: 100%;
+  border: 0.3vw solid var(--secondary);
+  border-radius: 1vw;
 }
 
 span[role="img"] {
@@ -139,7 +142,7 @@ span[role="img"] {
 }
 
 form {
-  width: 40%;
+  width: 60%;
 }
 
 input {
@@ -160,12 +163,23 @@ li {
   list-style: none;
 }
 
-nav a:hover {
+#programming li {
+  list-style: square;
+}
+
+nav li:hover {
   text-decoration: none;
+  background-color: var(--dark);
+}
+
+nav ul{
+  text-align: center;
+  margin-left: 7vw;
 }
 
 nav  li {
   cursor: pointer;
+  width: 14vw;
 }
 
 textarea {
@@ -184,6 +198,7 @@ textarea {
 
 .flex-row {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -246,8 +261,8 @@ textarea {
 }
 
 .img-thumbnail {
-  width: auto;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   margin-bottom: 50px;
   cursor: pointer;
 }
@@ -272,10 +287,23 @@ textarea {
 	width: 960px;
 }
 
+.modalContainer p {
+  text-align: center;
+}
 .modalTitle {
-	font-size: 18px;
+	font-size: 4vw;
 	font-weight: 600;
 	margin-bottom: 25px;
+  text-align: center;
+}
+
+#modal-btn {
+  display: flex;
+  justify-content: center;
+}
+
+#modal-btn img {
+  border: none;
 }
 
 button {
@@ -292,7 +320,7 @@ button {
 
 a {
 	border-radius: 5px;
-	color: var(--primary);
+	color: var(--tertiary);
 	font-weight: 600;
 	padding: 2px 4px;
 	margin-left: -2px;
@@ -307,4 +335,44 @@ a {
 #profile-img {
   width: 50%;
   border-radius: 10vw;
+}
+
+.App-logo {
+  width: 100%;
+  height: 4vh;
+  
+}
+
+#resume {
+  border: 0.2vw solid var(--tertiary);
+  padding: 4vw;
+}
+
+#resume h3 {
+  margin-top: 2vw;
+}
+
+#resume h2 {
+  text-decoration: underline;
+}
+
+#link-logo,
+#github-logo {
+  width: 10vw;
+  border: none;
+
+}
+
+#logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.link-buttons {
+  margin: 2vw;
+}
+
+#close-btn {
+  background-color: #cc0000;
+  border: 0.1vw solid var(--tertiary)
 }

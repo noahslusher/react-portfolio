@@ -1,6 +1,8 @@
 import React from 'react'
 import Portfolio from '../Portfolio'
 import logo from '../../assets/logo.svg'
+import gitHub from './logo.svg'
+import linkLogo from './link-logo.svg'
 
 const Modal = ({ onClose, currentPhoto }) => {
  const { name, description, index, link, repo } = currentPhoto;
@@ -8,18 +10,26 @@ const Modal = ({ onClose, currentPhoto }) => {
  return (
   <div className="modalBackdrop">
    <div className="modalContainer">
-    <h3 className="modalTitle"> </h3>
+    <h1 className="modalTitle"> {name} </h1>
     <img 
     src={require(`../../assets/works/${index}.jpg`)}
     alt="current category"
     />
-    <h3>{name}</h3>
     <p>{description}</p>
-    <a href={link} target="_blank">See {name} in action here!</a>
-    <a href={repo} target="_blank">Repository Link</a>
-    <button type="button" onClick={onClose}>
+    <span id="logo-container">
+    <button className="link-buttons">
+    <a href={link} target="_blank"><img id="link-logo"src={linkLogo}></img></a>
+    </button>
+    <button className="link-buttons">
+    <a href={repo} target="_blank"><img id="github-logo"src={gitHub}></img></a>
+    </button>
+    </span>
+    <br/>
+    <div id='modal-btn'>
+    <button id="close-btn"type="button" onClick={onClose}>
      <img src={logo} className='App-logo'></img>
     </button>
+    </div>
    </div>
   </div>
  )
