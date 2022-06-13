@@ -1,4 +1,4 @@
-# Readme.md Generator
+# Noah Slusher React Portfolio
   ![License](https://img.shields.io/badge/license-mit-blue.svg)
   ## Description
 I created an updated portfolio to showcase my latest projects and become familiar with React.
