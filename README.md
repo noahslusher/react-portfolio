@@ -4,7 +4,7 @@
 I created an updated portfolio to showcase my latest projects and become familiar with React.
 
   ## Live URL
-  https://noahslusher.github.io/README.md-generator/
+ https://noahslusherportfolio.herokuapp.com/
 
   ## Table of Contents
 * [Installation](#Installation)
