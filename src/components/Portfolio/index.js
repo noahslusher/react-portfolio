@@ -21,11 +21,11 @@ const Portfolio = () => {
     link: 'https://noahslusher.github.io/NP-trip-planner/'
   },
   {
-    name: 'Weather Dashboard',
+    name: 'Stacked',
     category: 'works',
-    description: 'A weather forecasting application that uses weather and geolocation APIs to give the user a weather forecast based on the desired location. It utilizes JavaScript, HTML, CSS, 3rd-party APIs, and JQuery.',
-    repo: 'https://github.com/noahslusher/weather-dashboard',
-    link: 'https://noahslusher.github.io/weather-dashboard/'
+    description: 'A MERN application that handles both front-end and back-end functionality to create an app that allows users to track exercises and compare against other users. It uses React.js, Mongoose/MongoDB, GraphQL, Express.js, Node.js, JWTs, and Bcrypt.',
+    repo: 'https://github.com/mschaaf17/Exercise-Mern',
+    link: 'https://exercise-mernapp.herokuapp.com/'
   },
   {
     name: 'Tech-er',
