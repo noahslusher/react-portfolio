@@ -4,7 +4,7 @@
 I created an updated portfolio to showcase my latest projects and become familiar with React.
 
   ## Live URL
- https://noahslusherportfolio.herokuapp.com/
+https://main.d1gm3z9y7r2q29.amplifyapp.com/
 
   ## Table of Contents
 * [Installation](#Installation)
